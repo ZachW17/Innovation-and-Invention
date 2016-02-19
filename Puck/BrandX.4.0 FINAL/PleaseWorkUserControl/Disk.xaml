@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="PleaseWorkUserControl.Disk"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:PleaseWorkUserControl"
+             mc:Ignorable="d" TouchUp="UserControl_TouchUp_1" TouchLeave="UserControl_TouchLeave_1" Height="500" Width="472">
+    <Grid Name="mygrid">
+        <local:ExpandedDisk x:Name="OuterCircle" TouchDown="Circle_TouchDown_1" Visibility="Collapsed" HorizontalAlignment="Left" VerticalAlignment="Top"></local:ExpandedDisk>
+        <Rectangle x:Name="InnerCircle" Fill="#FFF4F4F5" HorizontalAlignment="Center" Opacity=".3" Height="100" Margin="0" Stroke="Black" VerticalAlignment="Center" Width="100" RadiusX="100" RadiusY="100"
+                   IsManipulationEnabled="False" TouchDown="Circle_TouchDown_1"/>
+    </Grid>
+</UserControl>
